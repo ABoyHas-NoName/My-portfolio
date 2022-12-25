@@ -1,0 +1,145 @@
+*{
+    margin: auto;
+    padding: 0 0;
+}
+body{
+    width: 390px;
+    height: 1500px;
+    background: linear-gradient(rgb(1, 1, 20), rgb(2, 5, 26));
+}
+
+#hamburger{
+    display: none;
+}
+
+.lines div {
+    height: 4px;
+    background-color: #000;
+    margin: 3px 0;
+    border-radius: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.lines {
+    width: 30px;
+    display: block;
+    margin: 20px 0;
+    border: none;
+    padding: 2px 5px 2px;
+    background: lightblue;
+    border-radius: 3px;
+    position: relative;
+    z-index: 9;
+    position: fixed;
+    left: 380px;
+    top: px;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.lines:hover div{
+    width: 30px;
+}
+
+.lines:hover .nav{
+    display: list-item;
+   
+    position: fixed;
+    z-index: 10;
+
+}
+
+.nav{
+    display: none;
+    height: 500px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255);
+    position: relative;
+    z-index: 3;
+}
+.nav a p{
+    display: noe;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    line-height: 1;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+
+#navbar{
+    /* width: 390px; */
+    height: 50px;
+    border-radius: 0 0;
+    background-color: rgba(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    width: 396px;
+    translate: -10px 0 0;
+    padding: 0px 10px 0px 10px ;
+}
+
+#navbar a{
+    color: #000;
+    font-size: smaller;
+    text-decoration: none;
+    position: relative;
+    left: 25px;
+    top: 10px;
+    padding:0 10px 0;
+}
+#navbar a:hover{
+    text-decoration: underline;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    /* .container{
+        margin: auto;
+        width: 390px;
+    }
+    doesnt hae effect yet..work on it later */
+    #navbar{
+        display: none;
+    }
+    #navbar a{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+}
+.words{
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 70px;
+}
+img{
+    width: 380px;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+p{
+    text-align: left;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}

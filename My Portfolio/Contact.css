@@ -1,0 +1,209 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    /* background: url('images/longBg.jpeg'); */
+    background-size: 400px 2000px;
+}
+body{
+    margin: auto;
+    width: 390px;
+}
+
+#hamburger{
+    display: none;
+}
+
+.lines div {
+    height: 4px;
+    background-color: #000;
+    margin: 3px 0;
+    border-radius: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.lines {
+    width: 30px;
+    display: block;
+    margin: 20px 0;
+    border: none;
+    padding: 2px 5px 2px;
+    background: lightblue;
+    border-radius: 3px;
+    position: relative;
+    z-index: 9;
+    position: fixed;
+    left: 380px;
+    top: px;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.lines:hover div{
+    width: 30px;
+}
+
+.lines:hover .nav{
+    display: list-item;
+   
+    position: fixed;
+    z-index: 10;
+
+}
+
+.nav{
+    display: none;
+    height: 500px;
+    max-width: 100%;
+    background-color: rgb(133, 127, 127,0.5);
+    position: relative;
+    z-index: 3;
+}
+.nav a p{
+    display: noe;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    line-height: 1;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+
+#navbar{
+    /* width: 390px; */
+    height: 50px;
+    border-radius: 0 0;
+    background-color: rgb(133, 127, 127,0.5);
+    font-family: 'Courier New', Courier, monospace;
+    width: 396px;
+    translate: -10px 0 0;
+    padding: 0px 10px 0px 10px ;
+}
+
+#navbar a{
+    color: #000;
+    font-size: smaller;
+    text-decoration: none;
+    position: relative;
+    left: 25px;
+    top: 10px;
+    padding:0 10px 0;
+}
+#navbar a:hover{
+    text-decoration: underline;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    /* .container{
+        margin: auto;
+        width: 390px;
+    }
+    doesnt hae effect yet..work on it later */
+    #navbar{
+        display: none;
+    }
+    #navbar a{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+}
+
+.bg img{
+    max-width: 102%;
+    max-height: 100%;
+    
+    /* opacity: .7; */
+}
+
+
+.words{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.input{
+    position: relative;
+    left: 10px;
+    background-color: #fff;
+}
+
+#name{
+    height: 40px;
+    width: 300px;
+    border-radius: 7px;
+}
+#email{
+    height: 40px;
+    width: 300px;
+    border-radius: 7px;
+}
+#message{
+    border-radius: 7px;
+}
+::placeholder{
+    position: relative;
+    left: 5px;
+}
+input, select, textarea{
+    color: #000;
+}
+textarea:focus, input:focus{
+    color: #000;
+}
+button{
+    position: relative;
+    left: 10px;
+    width: 70px;
+    height: 40px;
+    color: #fff;
+    background: rgb(8, 8, 56);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 7px;
+}
+.email{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -10px;
+    border-radius: 100%;
+}
+.phone{
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    border-radius: 100%;
+}
+.twitter{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.linkedin{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.flex{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    background: rgb(3, 3, 20);
+    /* background-size: 80px 50px; */
+}

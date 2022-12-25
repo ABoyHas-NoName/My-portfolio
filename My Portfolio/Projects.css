@@ -1,0 +1,194 @@
+#navbar{
+    width: 390px;
+    height: 50px;
+    border-radius: 0 0;
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#navbar a{
+    color: #000;
+    font-size: smaller;
+    position: relative;
+    right: px;
+    top: 10px;
+    padding:0 10px 0;
+}
+#navbar a:hover{
+    text-decoration: underline;
+
+}
+
+
+#hamburger{
+    display: none;
+}
+.lines div {
+    height: 4px;
+    background-color: #000;
+    margin: 3px 0;
+    border-radius: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.lines {
+    width: 30px;
+    display: block;
+    margin: 20px 0;
+    border: none;
+    padding: 2px 5px 2px;
+    background: lightblue;
+    border-radius: 3px;
+    position: relative;
+    z-index: 9;
+    position: fixed;
+    left: 340px;
+    top: -10px;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.lines:hover div{
+    width: 30px;
+}
+
+.lines:hover .nav{
+    display: list-item;
+   
+    position: fixed;
+    z-index: 10;
+
+}
+
+.nav{
+    display: none;
+    height: 500px;
+    max-width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+}
+.nav a p{
+    display: noe;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    line-height: 1;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+body{
+    background-image: url('images/longBg.jpeg');
+    background-size: 391px 120%;
+    margin: auto;
+    width: 390px;
+}
+.container{
+    position: relative;
+    max-width: 390px;
+       /* bottom: 350px; */
+}
+div#heading{
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    background: url('images/images\ \(2\).jpeg');
+    max-width: 390px;
+    border: none;
+    position: fixed; 
+    z-index: 1;
+}
+h1{
+    padding: 40px 20px 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    padding: 40px 10px 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.projects{
+    position: relative;
+    top: 365px;
+    z-index: 2;
+    background: #fff;
+    /* background-image: url('images/images\ \(6\).jpeg'); */
+}
+div #img {
+    height: auto;
+    position: relative;
+    left: 10px;
+    max-width: 95%;
+    opacity: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px 5px 05px 05px;
+    /* transition: opacity .25s ease-in-out; */
+    /* background: #fff; */
+}
+
+/* img:hover {
+    opacity: 30%;
+} */
+
+.description {
+    padding: 10px 10px 50px;
+    position: relative;
+    align-items: center;
+    color: rgb(18, 40, 235); 
+    font-family: 'Courier New', Courier, monospace;
+}
+div{
+    /* border: 1px solid rgb(61, 58, 53); */
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    /* padding: 10px 10px 30px; */
+}
+a{
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    /* .container{
+        margin: auto;
+        width: 390px;
+    }
+    doesnt hae effect yet..work on it later */
+    #navbar{
+        display: none;
+    }
+    #navbar a{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+}
+

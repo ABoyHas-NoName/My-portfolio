@@ -1,0 +1,33 @@
+.lines div {
+    height: 4px;
+    background-color: #000;
+    margin: 3px 0;
+    border-radius: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.lines {
+    width: 30px;
+    display: block;
+    margin: 20px 0;
+    border: 2px dotted #fff;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.lines:hover div {
+    width: 30px;
+}

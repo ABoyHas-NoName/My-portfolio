@@ -1,0 +1,222 @@
+#hamburger{
+    display: none;
+}
+
+.lines div {
+    height: 4px;
+    background-color: #000;
+    margin: 3px 0;
+    border-radius: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.lines {
+    width: 30px;
+    display: block;
+    margin: 20px 0;
+    border: none;
+    padding: 2px 5px 2px;
+    background: lightblue;
+    border-radius: 3px;
+    position: relative;
+    z-index: 9;
+    position: fixed;
+    left: 380px;
+    top: px;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.lines:hover div{
+    width: 30px;
+}
+
+.lines:hover .nav{
+    display: list-item;
+   
+    position: fixed;
+    z-index: 10;
+
+}
+
+.nav{
+    display: none;
+    height: 500px;
+    max-width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+}
+.nav a p{
+    display: noe;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    line-height: 1;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+* {
+    margin: auto;
+    padding: 0 0;
+}
+
+body {
+    width: 390px;
+    height: 2000px;
+}
+
+.bg {
+    background: url('images/images\ \(1\).jpeg');
+    height: 600px;
+    /* max-width: 100%; */
+    width: 440px;
+    opacity: .3;
+    position: relative;
+    right: px;
+}
+
+.intro {
+    position: relative;
+    top: -400px;
+    left: 18px;
+    height: 00px;
+    max-width: 100%;
+    background-size: 200px 500px;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.intro a {
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.read-more {
+    padding: 10px 20px 10px;
+    background: #000;
+    color: #fff;
+}
+
+.portfolio{
+    position: relative;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-weight: bolder;
+
+
+}
+.portfolio h2{
+    color: rgb(1, 1, 29);
+    position: relative;
+    left: 20px;
+}
+.portfolio a {
+    padding: 15px 25px 15px;
+    background: rgb(1, 1, 29);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+.bg2 img{
+    width: 440px;
+    height: 400px;
+    position: relative;
+    right: px;
+}
+.bio{
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left: 5px;
+    font-weight: bolder;
+
+}
+
+.bio h2{
+    color: rgb(1, 1, 29);
+    position: relative;
+    left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bio a{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px 25px 15px;
+    background: rgb(1, 1, 29);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+
+#navbar{
+    width: 390px;
+    height: 50px;
+    border-radius: 0 0;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    width: 440px;
+}
+
+#navbar a{
+    color: #fff;
+    font-size: smaller;
+    text-decoration: none;
+    position: relative;
+    left: 25px;
+    top: 10px;
+    padding:0 10px 0;
+}
+#navbar a:hover{
+    text-decoration: underline;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    /* .container{
+        margin: auto;
+        width: 390px;
+    }
+    doesnt hae effect yet..work on it later */
+    #navbar{
+        display: none;
+    }
+    #navbar a{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+}
